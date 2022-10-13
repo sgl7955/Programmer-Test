@@ -1,84 +1,84 @@
 const qnaList = [
     {
-      q: '1. 라면을 끓일 때 나의 타입은?',
+      q: '1. 라면을 끓일 때 나의 타입은?', //노력VS효율//
       a: [
-        { answer: 'a. 나는 세계 최고 라면 레시피를 가지고 있지.', type: ['cow', 'tiger', 'dragon', 'chick'] },
-        { answer: 'b. 오늘은 어떻게 해먹을까~ 백선생님 나와라!', type: ['mouse', 'rabbit', 'horse', 'snake', 'dog', 'monkey'] },
+        { answer: 'a. 나는 세계 최고 라면 레시피를 가지고 있지.', type: ['ENFJ', 'ENFP', 'ENTJ', 'ENTP', 'ESFJ', 'ESFP', 'ESTJ', 'ESTP'] },
+        { answer: 'b. 오늘은 어떻게 해먹을까~ 백선생님 나와라!', type: ['INFJ', 'INFP', 'INTJ', 'INTP', 'ISFJ', 'ISFP', 'ISTJ', 'ISTP'] },
       ]
     },
     {
-      q: '2. 다음 중 내가 더 자주 사용하는 말은? ',
+      q: '2. 다음 중 내가 더 자주 사용하는 말은? ', //감각VS직관//
       a: [
-        { answer: 'a. 아니..! 현실적으로 좀 생각해 보라구.', type: ['mouse', 'rabbit', 'tiger', 'monkey'] },
-        { answer: 'b. 아니..! 상상을 좀 해보라구.', type: ['cow', 'horse', 'snake', 'dog'] },
+        { answer: 'a. 아니..! 현실적으로 좀 생각해 보라구.', type: ['ESFJ', 'ESFP', 'ESTJ', 'ESTP','ISFJ','ISFP','ISTJ','ISTP'] },
+        { answer: 'b. 아니..! 상상을 좀 해보라구.', type: ['ENFJ', 'ENFP', 'ENTJ', 'ENTP','INFJ','INFP','INTJ','INTP'] },
       ]
     },
     {
-      q: '3. 다음 중 가장 마음에 드는 박명수 어록은?',
+      q: '3. 다음 중 가장 마음에 드는 박명수 어록은?', //판단VS인식//
       a: [
-        { answer: 'a. 늦었다고 생각할 때가 늦은거다. 그러니 지금 당장 시작해라', type: ['cow', 'rabbit', 'tiger', 'dog', 'monkey'] },
-        { answer: 'b. 죽음과 결혼은 미룰수록 좋다.', type: ['sheep', 'chick', 'pig'] },
+        { answer: 'a. 늦었다고 생각할 때가 늦은거다. 그러니 지금 당장 시작해라', type: ['ESFJ', 'ESTJ', 'ISFJ', 'ISTJ', 'ENFJ','ENTJ','INFJ','INTJ'] },
+        { answer: 'b. 죽음과 결혼은 미룰수록 좋다.', type: ['ESFP', 'ESTP', 'ISFP','ISTP', 'ENFP','ENTP','INFP','INTP'] },
       ]
     },
     {
-      q: '4. 항마력이 필요한 오글거리는 연예인 짤을 봤을 때 드는 생각은?',
+      q: '4. 항마력이 필요한 오글거리는 연예인 짤을 봤을 때 드는 생각은?', //사고VS감정//
       a: [
         { answer: 'a. 극.혐.', type: ['cow', 'tiger', 'dragon' ] },
         { answer: 'b. 연예인도..먹고 살기..힘들구나..', type: ['sheep', 'dog', 'monkey', 'chick', 'pig' ] },
       ]
     },
     {
-      q: '5. 버스 1분뒤 도착 예정, 친구가 뛴다면?',
+      q: '5. 버스 1분뒤 도착 예정, 친구가 뛴다면?', //노력VS효율//
       a: [
-        { answer: 'a. 야,빠ㅣㅣ리 와!!!(누구보다 빠르게 남들과는 다르게..feat.아웃사이더)', type: ['cow', 'sheep', 'dog', 'dragon', 'chick' ] },
-        { answer: 'b. 난 틀렸어 먼저 가...', type: ['mouse', 'rabbit', 'horse', 'pig']},
+        { answer: 'a. 야,빠ㅣㅣ리 와!!!(누구보다 빠르게 남들과는 다르게..feat.아웃사이더)', type: ['ENFJ', 'ENFP', 'ENTJ', 'ENTP', 'ESFJ', 'ESFP', 'ESTJ', 'ESTP'] },
+        { answer: 'b. 난 틀렸어 먼저 가...', type: ['INFJ', 'INFP', 'INTJ', 'INTP', 'ISFJ', 'ISFP', 'ISTJ', 'ISTP']},
       ]
     },
   
     {
-      q: '6. "너 이번에 새로 나온 아이폰 봤어?"라고 친구가 묻는다면?',
+      q: '6. "너 이번에 새로 나온 아이폰 봤어?"라고 친구가 묻는다면?', //감각VS직관//
       a: [
-        { answer: 'a. 이번에 노치도 없어졌더라! 완전 사고싶어!', type: ['dragon', 'chick', 'pig' ] },
-        { answer: 'b. 존예! 딥퍼플 색감이 너무 예쁘더라', type: ['mouse', 'rabbit', 'horse', 'dog' ] },
+        { answer: 'a. 이번에 노치도 없어졌더라! 완전 사고싶어!', type: ['ESFJ', 'ESFP', 'ESTJ', 'ESTP','ISFJ','ISFP','ISTJ','ISTP'] },
+        { answer: 'b. 존예! 딥퍼플 색감이 너무 예쁘더라', type: ['ENFJ', 'ENFP', 'ENTJ', 'ENTP','INFJ','INFP','INTJ','INTP'] },
       ]
     },
     {
-      q: '7. 쇼핑을 할 때 자주 듣는 말은?',
+      q: '7. 쇼핑을 할 때 자주 듣는 말은?', //판단VS인식//
       a: [
-        { answer: 'a. 제발 좀 사라, 사!', type: ['cow', 'sheep', 'pig' ] },
-        { answer: 'b. 아니 또 산다구...?', type: ['tiger', 'dragon', 'chick' ] },
+        { answer: 'a. 제발 좀 사라, 사!', type: ['ESFJ', 'ESTJ', 'ISFJ', 'ISTJ', 'ENFJ','ENTJ','INFJ','INTJ'] },
+        { answer: 'b. 아니 또 산다구...?', type: ['ESFP', 'ESTP', 'ISFP','ISTP', 'ENFP','ENTP','INFP','INTP'] },
       ]
     },
     {
-      q: '8. 갑자기 폭우가 내릴 때 당신이 듣는 생각은?',
+      q: '8. 갑자기 폭우가 내릴 때 당신이 듣는 생각은?', //사고VS감정//
       a: [
         { answer: 'a. 아 우산 사야하나? 돈 아까운데...', type: ['mouse', 'dragon', 'chick' ] },
         { answer: 'b. 축축하고 젖는 거 최악이야...', type: ['rabbit', 'tiger', 'horse', 'snake', 'dog', 'monkey' ] },
       ]
     },
     {
-      q: '9. 충고을 들을 때 나의 반응은?',
+      q: '9. 충고을 들을 때 나의 반응은?', //노력VS효율//
       a: [
-        { answer: 'a. 너가 뭘 아냐며 따지고 싶지만 귀찮으니까 "응 그래~"', type: ['sheep', 'mouse', 'snake', 'chick' ] },
-        { answer: 'b. 노력하고 있는 날 몰라줘서 속상하지만 "고마워! 도움이 되었어."', type: ['cow', 'rabbit', 'horse', 'pig' ] },
+        { answer: 'a. 너가 뭘 아냐며 따지고 싶지만 귀찮으니까 "응 그래~"', type: ['ENFJ', 'ENFP', 'ENTJ', 'ENTP', 'ESFJ', 'ESFP', 'ESTJ', 'ESTP'] },
+        { answer: 'b. 노력하고 있는 날 몰라줘서 속상하지만 "고마워! 도움이 되었어."', type: ['INFJ', 'INFP', 'INTJ', 'INTP', 'ISFJ', 'ISFP', 'ISTJ', 'ISTP'] },
       ]
     },
     {
-      q: '10. "4차산업혁명"이라는 단어를 처음 들었을 때 드는 생각은?"',
+      q: '10. "4차산업혁명"이라는 단어를 처음 들었을 때 드는 생각은?"', //감각VS직관//
       a: [
-        { answer: 'a. 이상한 말 또 하나 늘었네;;ㅋ', type: ['dragon', 'chick', 'pig'] },
-        { answer: 'b. 뭔가 있어보이고 멋있다;;ㅎ', type: ['mouse', 'tiger', 'horse', 'snake' ] },
+        { answer: 'a. 이상한 말 또 하나 늘었네;;ㅋ', type: ['ESFJ', 'ESFP', 'ESTJ', 'ESTP','ISFJ','ISFP','ISTJ','ISTP'] },
+        { answer: 'b. 뭔가 있어보이고 멋있다;;ㅎ', type: ['ENFJ', 'ENFP', 'ENTJ', 'ENTP','INFJ','INFP','INTJ','INTP'] },
       ]
     },
     {
-      q: '11. 오늘은 휴일 저녁. 무엇을 했나요?',
+      q: '11. 오늘은 휴일 저녁. 무엇을 했나요?', //판단VS인식//
       a: [
-        { answer: 'a. 아, 오늘 이것저것 하려 했는데 못함', type: ['cow', 'dragon', 'chick', 'pig' ] },
-        { answer: 'b. 아, 오늘 보람차게 숨쉬었다.', type: ['sheep', 'mouse', 'rabbit', 'horse', 'dog'] },
+        { answer: 'a. 아, 오늘 이것저것 하려 했는데 못함', type: ['ESFJ', 'ESTJ', 'ISFJ', 'ISTJ', 'ENFJ','ENTJ','INFJ','INTJ'] },
+        { answer: 'b. 아, 오늘 보람차게 숨쉬었다.', type: ['ESFP', 'ESTP', 'ISFP','ISTP', 'ENFP','ENTP','INFP','INTP'] },
       ]
     },
     {
-      q: '12. 대화를 할 때 주로 맡는 포지션은?',
+      q: '12. 대화를 할 때 주로 맡는 포지션은?', //사고VS감정//
       a: [
         { answer: 'a. 왜왜왜오애왜왜 어떻게?? 응??(나는야 물음표 살인마)', type: ['rabbit', 'horse', 'dragon', 'chick' ] },
         { answer: 'b. 아니..근데..그건..이렇게 돼야...(나는야 프로설명러)', type: ['mouse', 'tiger', 'snake', 'dog', 'monkey'] },
