@@ -1,0 +1,12 @@
+#main {
+    background-color: white;
+    width: 80%;
+    text-align: center;
+    border-radius: 20px;
+}
+*{
+    font-family: 'Black Han Sans', sans-serif;
+}
+p {
+    font-size: 24px;
+}
