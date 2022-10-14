@@ -4,6 +4,15 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title></title>
+        <style>
+            .gradtext {
+                background: -webkit-linear-gradient(-70deg, #db469f 0%, #2188ff 100%);
+                -webkit-background-clip: text;
+                background-clip: text;
+                -webkit-text-fill-color: transparent;
+                -webkit-box-decoration-break: clone;
+            }
+          </style>
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -14,12 +23,12 @@
     <body>
         <div class="container">
             <section id="main" class="mx-auto mt-5 py-5 px-3">
-                <h1>MBTI로 알아보는</h1>
-                <h1>나의 개발자 유형</h1>
+                <h1 class="gradtext">MBTI로 알아보는</h1>
+                <h1 class="gradtext">나의 개발자 유형</h1>
                 <div class="col-lg-6 col-md-8 col-sm-10 col-12 mx-auto">
                     <img src="./img/main.png" alt="mainImage" class="img-fluid">
                 </div>
-                <p>
+                <p style="color: lightgrey;">
                     내 안의 개발자를 찾아서...&#9733;
                 </p>
                 <button type="button" class="btn btn-dark mt-3">시작하기</button>
