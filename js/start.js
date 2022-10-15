@@ -50,6 +50,23 @@ function calResult() {
     return resultword;
 }
 
+function setResult() {
+    let point = calResult();
+    const resultName = document.querySelector('.resumtname');
+    resultName.innerHTML = infoList[point].name;
+
+    var resultImg = document.createElement('img');
+    const imgDiv = document.querySelector('#resultImg');
+    var imgURL = 'img/image-' + point + '.png';
+    resultImg.src =imgURL;
+    resultImg.alt = point;
+    resultImg.classList.add('img-fluid');
+    imgDiv.appendChild(resultImg);
+
+    const resultDesc = document.querySelector('.resultDesc');
+    resultDesc.innerHTML = infoList[point].desc;
+}
+
 function goResult() {
     qna.style.WebkitAnimation = "fadeOut 1s";
     qna.style.animation = "fadeOut 1s";
@@ -60,7 +77,7 @@ function goResult() {
             qna.style.display = "none";
             result.style.display = "block";
         }, 450)})
-
+        setResult();
         calResult();
 }
 
