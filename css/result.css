@@ -1,17 +1,61 @@
 #result {
     display: none;
-    background-color: white;
     width: 80%;
     text-align: center;
     border-radius: 20px;
+    font-family: 'IBM Plex Sans KR', sans-serif;
+}
+
+#shareResult {
+    width: 80%;
+    text-align: center;
+    border-radius: 20px;
+    font-family: 'IBM Plex Sans KR', sans-serif;
 }
 
 .resultname {
-    font-size: 26px;
+    font-size: 30px;
+    font-family: 'IBM Plex Sans KR', sans-serif;
 }
+
+.my-underline {
+    text-decoration-line: underline;
+    text-align: center;
+  }
+
+.underline {
+    text-align: left;
+    text-decoration: underline;
+    text-underline-position: under;
+    text-decoration-thickness: 3px;
+}
+
+.subject {
+    color: #fffbf4;
+}
+
 
 .resultDesc {
     font-size: 16px;
+    font-family: 'IBM Plex Sans KR', sans-serif;
+    text-align: left;
+}
+
+#resultImg {
+    display: grid;
+    grid-template-column: repeat(auto-fill,minmax(160px,auto));
+    width: 25%;
+    height: auto;
+}
+
+.left {
+    text-align: left;
+    display: inline;
+}
+
+.right {
+    text-align: right;
+    display: inline;
 }
 
 .kakao {
@@ -25,4 +69,17 @@
 .kakao:hover, .kakao:focus {
     background-color: whitesmoke;
     color: #FFE500;
+}
+
+.gohome {
+    color: white;
+    background-color: #1750a8;
+    font-size: 20px;
+    border: 0px;
+    border-radius: 10px;
+}
+
+.gohome:hover, .gohome:focus {
+    background-color: whitesmoke;
+    color: #1750a8;
 }

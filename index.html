@@ -8,7 +8,7 @@
         <meta name="description" content="MBTI 개발자유형">
         
         <!-- sns share-->
-        <meta property="og:url" content="" />
+        <meta property="og:url" content="https://mbtiprogrammer.netlify.app" />
         <meta property="og:title" content="MBTI 개발자유형" />
         <meta property="og:type" content="website" />
         <meta property="og:image" content="img/share.png">
@@ -25,17 +25,30 @@
                 background-clip: text;
                 -webkit-text-fill-color: transparent;
                 -webkit-box-decoration-break: clone;
+                font-family: 'Black Han Sans', sans-serif;
+            }
+            .resumtname {
+                font-family: 'Black Han Sans', sans-serif;
+                font-size: 20px;
             }
           </style>
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="./css/default.css">
         <link rel="stylesheet" href="./css/main.css">
         <link rel="stylesheet" href="./css/qna.css">
         <link rel="stylesheet" href="./css/animation.css">
         <link rel="stylesheet" href="./css/result.css">
+        <script src="https://developers.kakao.com/sdk/js/kakao.js"></script>
+  <script>
+    Kakao.init('81f4ac1884bfde9a3ee8a0c1dd1bcbb6');
+    Kakao.isInitialized();
+  </script>
     </head>
     <body>
         <div class="container">
@@ -71,16 +84,17 @@
                 <div id="resultImg" class="my-3 col-lg-6 col-md-8 col-sm-10 col-12 mx-auto">
 
                 </div>
-                <p style="color: lightgrey;">
+                <p style="color: gray;">
                     What's on my desk...
                 </p>
                 <div class="resultDesc">
 
                 </div>
-                <button type="button" class="kakao mt-3 py-2 px-3">공유하기</button>
+                <button type="button" class="kakao mt-3 py-2 px-3" onclick="js:setShare()">공유하기</button>
             </section>
             <script src="js/data.js" charset="utf-8"></script>
             <script src="js/start.js" charset="utf-8"></script>
+            <script src="js/share.js" charset="utf-8"></script>
         </div>
     </body>
 </html>

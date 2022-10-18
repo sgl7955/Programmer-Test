@@ -4,9 +4,10 @@
     text-align: center;
     border-radius: 20px;
 }
-*{
+#main, #qna{
     font-family: 'Black Han Sans', sans-serif;
 }
+
 p {
     font-size: 24px;
 }
