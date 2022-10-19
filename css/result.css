@@ -21,6 +21,9 @@
 .my-underline {
     text-decoration-line: underline;
     text-align: center;
+    text-underline-position: under;
+    text-decoration-thickness: 3px;
+    font-size: 25px;
   }
 
 .underline {
@@ -28,6 +31,7 @@
     text-decoration: underline;
     text-underline-position: under;
     text-decoration-thickness: 3px;
+    font-size: 25px;
 }
 
 .subject {

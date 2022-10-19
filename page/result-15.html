@@ -41,6 +41,11 @@
         <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="../css/default.css">
         <link rel="stylesheet" href="../css/result.css">
+        <script src="https://developers.kakao.com/sdk/js/kakao.js"></script>
+        <script>
+            Kakao.init('81f4ac1884bfde9a3ee8a0c1dd1bcbb6');
+            Kakao.isInitialized();
+        </script>
     </head>
     <body>
         <section id="shareResult" class="mx-auto my-5 py-5 px-3">
@@ -105,7 +110,11 @@
                     location.href = "/index.html";
                 }
             </script>
+            <button type="button" class="kakao mt-3 py-2 px-3" onclick="js:setShare()">공유하기</button>
             <button type="button" class="gohome mt-3 py-2 px-3" onclick="js:moveHome()">나도 참여하기</button>
         </section>
+        <script src="../js/data.js" charset="utf-8"></script>
+        <script src="../js/start.js" charset="utf-8"></script>
+        <script src="../js/share.js" charset="utf-8"></script>
     </body>
 </html>

@@ -25,6 +25,9 @@ function calResult() {
         { name: 'ISTP', value: 0, key: 15 },
     ]
 
+    var url = "/page/result-";
+    var html = ".html"
+
     for(let i = 0; i < endPoint; i++) {
         var target = qnaList[i].a[select[i]];
         for(let j = 0; j < target.type.length; j++) {
@@ -47,8 +50,16 @@ function calResult() {
     });
     console.log(resultArray);
     let resultword = resultArray[0].key;
+    location.href = url + resultword + html;
     return resultword;
 }
+
+
+// function callResult() {
+//     location.href = "/page/result-.html";
+// }
+
+
 
 function setResult() {
     let point = calResult();
@@ -97,8 +108,8 @@ function addAnswer(answerText, qIdx, idx) {
         var children = document.querySelectorAll('.answerList');
         for(let i = 0; i < children.length; i++) {
             children[i].disabled = true;
-            main.style.WebkitAnimation = "fadeOut 0.5s";
-            main.style.animation = "fadeOut 0.5s";
+            children[i].style.WebkitAnimation = "fadeOut 0.5s";
+            children[i].style.animation = "fadeOut 0.5s";
         }
         setTimeout(() => {
             select[qIdx] = idx;
