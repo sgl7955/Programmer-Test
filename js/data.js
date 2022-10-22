@@ -24,7 +24,7 @@ const qnaList = [
     q: '4. 항마력이 필요한 오글거리는 연예인 짤을 봤을 때 드는 생각은?', //사고VS감정//
     a: [
       { answer: 'a. 극.혐.', type: ['ESTJ', 'ISTJ', 'ENTJ' ,'INTJ', 'ESTP','ISTP', 'ENTP', 'INTP'] },
-      { answer: 'b. 연예인도..먹고 살기..힘들구나..', type: ['ESFJ', 'ISFJ', 'ENFJ', 'INFJ', 'ESFP', 'ISFP', 'ENFP', 'INFP',] },
+      { answer: 'b. 연예인도..먹고 살기..힘들구나..', type: ['ESFJ', 'ISFJ', 'ENFJ', 'INFJ', 'ESFP', 'ISFP', 'ENFP', 'INFP'] },
     ]
   },
   {
@@ -52,8 +52,8 @@ const qnaList = [
   {
     q: '8. 갑자기 폭우가 내릴 때 당신이 듣는 생각은?', //사고VS감정//
     a: [
-      { answer: 'a. 아 우산 사야하나? 돈 아까운데...', type: ['mouse', 'dragon', 'chick' ] },
-      { answer: 'b. 축축하고 젖는 거 최악이야...', type: ['rabbit', 'tiger', 'horse', 'snake', 'dog', 'monkey' ] },
+      { answer: 'a. 아 우산 사야하나? 돈 아까운데...', type: ['ESTJ', 'ISTJ', 'ENTJ' ,'INTJ', 'ESTP','ISTP', 'ENTP', 'INTP'] },
+      { answer: 'b. 축축하고 젖는 거 최악이야...', type: ['ESFJ', 'ISFJ', 'ENFJ', 'INFJ', 'ESFP', 'ISFP', 'ENFP', 'INFP'] },
     ]
   },
   {
@@ -80,8 +80,8 @@ const qnaList = [
   {
     q: '12. 대화를 할 때 주로 맡는 포지션은?', //사고VS감정//
     a: [
-      { answer: 'a. 왜왜왜오애왜왜 어떻게?? 응??(나는야 물음표 살인마)', type: ['rabbit', 'horse', 'dragon', 'chick' ] },
-      { answer: 'b. 아니..근데..그건..이렇게 돼야...(나는야 프로설명러)', type: ['mouse', 'tiger', 'snake', 'dog', 'monkey'] },
+      { answer: 'a. 왜왜왜오애왜왜 어떻게?? 응??(나는야 물음표 살인마)', type: ['ESTJ', 'ISTJ', 'ENTJ' ,'INTJ', 'ESTP','ISTP', 'ENTP', 'INTP'] },
+      { answer: 'b. 아니..근데..그건..이렇게 돼야...(나는야 프로설명러)', type: ['ESFJ', 'ISFJ', 'ENFJ', 'INFJ', 'ESFP', 'ISFP', 'ENFP', 'INFP'] },
     ]
   }
 ]
