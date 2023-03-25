@@ -6,7 +6,7 @@ const endPoint = 12;
 const select = [];
 
 function calResult() {
-    var pointArray = [
+    const pointArray = [
         { name: 'ENFJ', value: 0, key: 0 },
         { name: 'ENFP', value: 0, key: 1 },
         { name: 'ENTJ', value: 0, key: 2 },
@@ -25,8 +25,8 @@ function calResult() {
         { name: 'ISTP', value: 0, key: 15 },
     ]
 
-    var url = "/page/result-";
-    var html = ".html"
+    const url = "/page/result-";
+    const html = ".html"
 
     for(let i = 0; i < endPoint; i++) {
         var target = qnaList[i].a[select[i]];
@@ -39,7 +39,7 @@ function calResult() {
         }
     }
 
-    var resultArray = pointArray.sort(function (a,b) {
+    const resultArray = pointArray.sort(function (a,b) {
         if(a.value > b.value) {
             return -1;
         }
@@ -66,9 +66,9 @@ function setResult() {
     const resultName = document.querySelector('.resumtname');
     resultName.innerHTML = infoList[point].name;
 
-    var resultImg = document.createElement('img');
+    const resultImg = document.createElement('img');
     const imgDiv = document.querySelector('#resultImg');
-    var imgURL = 'img/image-' + point + '.png';
+    const imgURL = 'img/image-' + point + '.png';
     resultImg.src = imgURL;
     resultImg.alt = point;
     resultImg.classList.add('img-fluid');
@@ -93,8 +93,8 @@ function goResult() {
 }
 
 function addAnswer(answerText, qIdx, idx) {
-    var a = document.querySelector('.answerBox');
-    var answer = document.createElement('button'); //html요소를 만들어 반환//
+    const a = document.querySelector('.answerBox');
+    const answer = document.createElement('button'); //버튼 html요소를 만들어 반환//
     answer.classList.add('answerList') //class 값 부여//
     answer.classList.add('my-4');
     answer.classList.add('py-3');
@@ -104,8 +104,8 @@ function addAnswer(answerText, qIdx, idx) {
     a.appendChild(answer); //answer가 a에 속함//
     answer.innerHTML = answerText;
 
-    answer.addEventListener("click", function() {
-        var children = document.querySelectorAll('.answerList');
+    answer.addEventListener("click", function() { //클릭할 때 호출할 함수를 지정//
+        const children = document.querySelectorAll('.answerList');
         for(let i = 0; i < children.length; i++) {
             children[i].disabled = true;
             children[i].style.WebkitAnimation = "fadeOut 0.5s";
@@ -127,12 +127,12 @@ function goNext(qIdx) {
         return;
     }
 
-    var q = document.querySelector('.qBox');
+    const q = document.querySelector('.qBox');
     q.innerHTML = qnaList[qIdx].q;
     for(let i in qnaList[qIdx].a) {
         addAnswer(qnaList[qIdx].a[i].answer, qIdx, i);
     }
-    var status = document.querySelector('.statusBar');
+    const status = document.querySelector('.statusBar');
     status.style.width = (100/endPoint) * (qIdx+1) + '%';
 }
 

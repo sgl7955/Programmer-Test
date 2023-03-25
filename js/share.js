@@ -1,8 +1,8 @@
 const url = 'https://mbtiprogrammer.netlify.app/';
 
 function setShare(){
-  var resultImg = document.querySelector('#resultImg');
-  var resultAlt = resultImg.firstElementChild.alt;
+  const resultImg = document.querySelector('#resultImg');
+  const resultAlt = resultImg.firstElementChild.alt;
   const shareTitle = 'MBTI 개발자유형 결과';
   const shareDes = infoList[resultAlt].name;
   const shareImage = url + 'img/image-' + resultAlt + '.png';
